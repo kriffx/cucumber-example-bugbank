@@ -34,7 +34,9 @@ public class Element {
 
     public void text(String text) throws Exception {
         try {
-            this.wait.until(ExpectedConditions.elementToBeClickable(this.by)).sendKeys(text);
+            WebElement element = this.wait.until(ExpectedConditions.elementToBeClickable(this.by));
+            element.clear();
+            element.sendKeys(text);
         } catch (InvalidElementStateException | NoSuchElementException | StaleElementReferenceException | TimeoutException e) {
             String message = "O elemento " + this.by.toString() + " existente no DOM e tem um conjunto de recursos como oculto.";
             throw new Exception(message);
