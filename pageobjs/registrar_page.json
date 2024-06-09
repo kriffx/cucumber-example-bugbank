@@ -1,0 +1,11 @@
+{
+  "Registrar": "xpath://button[text()='Registrar']",
+  "E-mail": "xpath://*[@id='__next']/div/div[2]/div/div[2]/form/div[2]/input",
+  "Nome": "xpath://input[@name='name']",
+  "Senha": "xpath://*[@id='__next']/div/div[2]/div/div[2]/form/div[4]/div/input",
+  "Confirmar senha": "xpath://input[@name='passwordConfirmation']",
+  "Conta com saldo": "id:toggleAddBalance",
+  "Cadastrar": "xpath://button[text()='Cadastrar']",
+  "Sucesso":  "id:modalText",
+  "Fechar": "id:btnCloseModal"
+}
