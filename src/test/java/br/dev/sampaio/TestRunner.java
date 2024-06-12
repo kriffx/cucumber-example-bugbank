@@ -9,6 +9,7 @@ import org.testng.annotations.DataProvider;
         "summary",
         "html:reports/report.html",
         "json:reports/report.json",
+        "br.dev.sampaio.MyTestListener",
     },
     glue = { "br.dev.sampaio.steps" },
     features = "src/test/resources/features"
